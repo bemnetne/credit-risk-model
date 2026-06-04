@@ -1,0 +1,23 @@
+artifact_path: file:///c:/Users/bemnet/Desktop/credit-risk-model/credit-risk-model/notebooks/mlruns/1/models/m-e338f23f69c349478f61230cb4ccf12c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-e338f23f69c349478f61230cb4ccf12c
+model_size_bytes: 754
+model_uuid: m-e338f23f69c349478f61230cb4ccf12c
+prompts: null
+run_id: 9773a582d45b44fa84a79202705a29fe
+utc_time_created: '2026-06-04 08:09:16.883003'
