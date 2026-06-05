@@ -60,21 +60,21 @@ class FeatureEngineeringPipeline(
         # 2. Missing Values
         X = handle_missing_values(X)
 
-        # # 3. Drop non-predictive columns BEFORE encoding
-        # columns_to_drop = [
-        #     "TransactionId",
-        #     "BatchId",
-        #     "AccountId",
-        #     "SubscriptionId",
-        #     "CustomerId",
-        #     "CurrencyCode",
-        #     "TransactionStartTime"
-        # ]
+        # 3. Drop non-predictive columns BEFORE encoding
+        columns_to_drop = [
+            "TransactionId",
+            "BatchId",
+            "AccountId",
+            "SubscriptionId",
+            "CustomerId",
+            "CurrencyCode",
+            "TransactionStartTime"
+        ]
 
-        # X = X.drop(
-        #     columns=columns_to_drop,
-        #     errors="ignore"
-        # )
+        X = X.drop(
+            columns=columns_to_drop,
+            errors="ignore"
+        )
 
         # 4. Encoding
         encoder = create_encoding_pipeline()
